@@ -15,6 +15,7 @@ public class KioskBackApplication {
 
     public static void test(){
         System.out.println("test");
+        //수정한거 안보입니까?
     }
 
 }
