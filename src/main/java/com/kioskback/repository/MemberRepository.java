@@ -1,5 +1,8 @@
 package com.kioskback.repository;
 
-public interface MemberRepository {
+import com.kioskback.domain.Member;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface MemberRepository extends JpaRepository<Member, Long> {
 
 }
