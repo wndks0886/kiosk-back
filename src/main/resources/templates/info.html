@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>나의 정보</title>
+</head>
+<body>
+<div>
+  <h1><a href="/">홈으로</a></h1> <hr/>
+  <h2>유저 정보</h2>
+  <div>
+    <div th:text="|아이디 : ${member.loginId}|"/>
+    <div th:text="|role : ${member.role}|"/>
+  </div>
+</div>
+</body>
+</html>

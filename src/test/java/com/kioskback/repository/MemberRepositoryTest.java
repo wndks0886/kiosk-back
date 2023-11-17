@@ -1,13 +1,11 @@
 package com.kioskback.repository;
 
-import com.kioskback.domain.Member;
+import com.kioskback.domain.MemberEntity;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.time.LocalDateTime;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class MemberRepositoryTest {
@@ -17,7 +15,7 @@ class MemberRepositoryTest {
 
     @Test
     void saveTest(){
-        Member member1 = new Member();
+        MemberEntity member1 = new MemberEntity();
         member1.setMemberId("chk");
         member1.setPassword("1234");
         member1.setCreateDate(LocalDateTime.now());
@@ -25,7 +23,7 @@ class MemberRepositoryTest {
 
         System.out.println(member1);
 
-        Member member2 = new Member();
+        MemberEntity member2 = new MemberEntity();
         member2.setMemberId("chk");
         member2.setPassword("1234");
         member2.setCreateDate(LocalDateTime.now());
